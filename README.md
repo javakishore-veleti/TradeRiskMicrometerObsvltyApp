@@ -13,19 +13,6 @@ This project is a Maven multi-module setup for a TradeRisk application, utilizin
 
 This setup enables detailed monitoring and insights into the application's performance and behavior, helping ensure reliability and operational efficiency.
 
-## Project Structure
-TradeRiskMicrometerObsvltyApp
-│
-├── pom.xml
-├── trade-manager-service
-│ ├── pom.xml
-│ └── src/main/java/org/tmh/platform/monitoring/trades/trade_manager_service/...
-│
-└── trade-risk-service
-├── pom.xml
-└── src/main/java/org/tmh/platform/monitoring/trades/trade_risk_service/...
-
-
 ## Modules
 
 ### trade-manager-service
