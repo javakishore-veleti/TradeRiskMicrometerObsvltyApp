@@ -6,8 +6,6 @@ This project is a Maven multi-module setup for a TradeRisk application, utilizin
 
 ![Architecture Diagram](README_TradeRiskMicrometerObsvltyApp.png)
 
-![Index HTML Layout Diagram](README_Index_Html_Layout.png)
-
 ## Key Features
 
 - **Micrometer Integration**: The primary focus of this project is to leverage Micrometer for comprehensive observability. Metrics from both services are collected and published for monitoring and analysis.
@@ -16,6 +14,10 @@ This project is a Maven multi-module setup for a TradeRisk application, utilizin
 - **Using `concurrently` NPM Package**: Both microservices can be started concurrently using the `concurrently` NPM package, simplifying development and testing.
 
 This setup enables detailed monitoring and insights into the application's performance and behavior, helping ensure reliability and operational efficiency.
+
+### Simple Index HTML Layout 
+This is a simple index HTML layout to invoke the Trade Risk service. You just need to double-click on the `index.html` file to open it in a browser. You donot need to run any server to open this HTML file.
+![Index HTML Layout Diagram](README_Index_Html_Layout.png)
 
 ## Modules
 
