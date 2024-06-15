@@ -46,13 +46,14 @@ NOTE: If you using this code repository you do not need to do this Project Setup
 - Maven 3.6.3 or later
 - Elasticsearch
 - AWS account (for CloudWatch integration)
+- npm (Node Package Manager)
 
 ### Building the Project
 
 To build the project, navigate to the root directory (`TradeRiskMicrometerObsvltyApp`) and run:
 
 ```sh
-mvn clean install
+npm run build
 ```
 
 ### Running the Applications
@@ -61,13 +62,13 @@ mvn clean install
 Navigate to the trade-manager-service directory and run:
 
 ```sh
-mvn spring-boot:run
+npm run start:trade-manager-service
 ```
 #### trade-risk-service
 Navigate to the trade-risk-service directory and run:
 
 ```sh
-mvn spring-boot:run
+npm run start:trade-risk-service
 ```
 
 ### Configuration
