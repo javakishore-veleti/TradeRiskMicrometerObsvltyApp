@@ -1,4 +1,4 @@
-# Trade Risk Micrometer Obsvlty App
+# Trade Risk Micrometer Observability and Monitoring App
 This project is a Maven multi-module setup for a TradeRisk application, utilizing Spring Boot and Micrometer for observability. It includes two independent Spring Boot web applications:
 
 1. **trade-manager-service**: Manages trade details and provides trade information through RESTful APIs.
