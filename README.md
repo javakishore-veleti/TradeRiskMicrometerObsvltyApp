@@ -59,16 +59,42 @@ npm run build
 ### Running the Applications
 
 #### trade-manager-service
-Navigate to the trade-manager-service directory and run:
+To start the microservices using npm, you can use the following commands:
 
 ```sh
 npm run start:trade-manager-service
 ```
+
 #### trade-risk-service
-Navigate to the trade-risk-service directory and run:
 
 ```sh
 npm run start:trade-risk-service
+```
+
+#### Start both services concurrently:
+```sh
+npm run start:all
+```
+
+### Stopping the Applications
+To stop the microservices, you can use the following commands:
+
+#### trade-manager-service
+
+#### Stop the trade-manager-service:
+
+```sh
+npm run stop:trade-manager-service
+```
+#### Stop the trade-risk-service
+
+```sh
+npm run stop:trade-risk-service
+```
+
+#### Stop both services concurrently:
+```sh
+npm run stop:all
 ```
 
 ### Configuration
