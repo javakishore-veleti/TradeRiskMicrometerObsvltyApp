@@ -4,6 +4,8 @@ This project is a Maven multi-module setup for a TradeRisk application, utilizin
 1. **trade-manager-service**: Manages trade details and provides trade information through RESTful APIs.
 2. **trade-risk-service**: Consumes trade information from the trade-manager-service, applies risk rules, and returns risk evaluation results.
 
+![Architecture Diagram](TradeRiskMicrometerObservabilityAndMonitorApp.png)
+
 ## Key Features
 
 - **Micrometer Integration**: The primary focus of this project is to leverage Micrometer for comprehensive observability. Metrics from both services are collected and published for monitoring and analysis.
