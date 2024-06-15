@@ -1,0 +1,4 @@
+org/tmh/platform/monitoring/trades/trade_risk_service/TradeRiskServiceApplication.class
+org/tmh/platform/monitoring/trades/trade_risk_service/api/controllers/TradeRiskController.class
+org/tmh/platform/monitoring/trades/trade_risk_service/common/dtos/TradeRiskResult.class
+org/tmh/platform/monitoring/trades/trade_risk_service/common/dtos/TradeDetails.class
