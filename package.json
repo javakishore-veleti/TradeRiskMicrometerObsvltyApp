@@ -4,6 +4,8 @@
   "description": "Maven multi-module project for TradeRisk application with Spring Boot, Micrometer, Elasticsearch, and AWS CloudWatch.",
   "scripts": {
     "build": "mvn clean install",
+    "start:elk": "docker-compose -f DevOps/ELK-Stack/docker-compose-elk.yaml up -d",
+    "stop:elk": "docker-compose -f DevOps/ELK-Stack/docker-compose-elk.yaml down",
     "start:trade-manager-service": "cd trade-manager-service && mvn spring-boot:run",
     "start:trade-risk-service": "cd trade-risk-service && mvn spring-boot:run",
     "start:all": "concurrently \"npm run start:trade-manager-service\" \"npm run start:trade-risk-service\"",

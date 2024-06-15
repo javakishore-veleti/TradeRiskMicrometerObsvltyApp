@@ -64,6 +64,13 @@ npm run build
 
 ### Running the Applications
 
+#### ELK Stack
+Before starting the applications, ensure that the ELK Stack Docker Compose setup is running. You can start it using the following command:
+
+```sh
+npm run start:elk
+```
+
 #### trade-manager-service
 To start the microservices using npm, you can use the following commands:
 
@@ -103,7 +110,26 @@ npm run stop:trade-risk-service
 npm run stop:all
 ```
 
+#### Stop ELK Stack
+After stopping the applications, ensure to stop the ELK Stack Docker Compose setup. You can stop it using the following command:
+```shell
+npm run stop:elk
+```
 ### Configuration
 #### Micrometer and Observability
 1. Elasticsearch: Configure the connection to your Elasticsearch instance in application.properties.
 2. AWS CloudWatch: Enable or disable AWS CloudWatch integration using a feature toggle in application.properties.
+
+#### Accessing Kibana
+Once the stack is running, you should be able to access Kibana at http://localhost:5601 from your browser.
+
+#### Configuring Kibana Index Pattern
+1. Open Kibana in your web browser at http://localhost:5601. 
+2. Go to Management > Index Patterns. 
+3. Click Create Index Pattern. 
+4. Enter the index pattern trade-risk-metrics-*. 
+5. Click Next Step. 
+6. Select the @timestamp field as the time filter field. 
+7. Click Create Index Pattern.
+
+With these updates, Kibana should now be accessible from the host machine, allowing you to visualize the metrics collected from the Trade Risk project.
