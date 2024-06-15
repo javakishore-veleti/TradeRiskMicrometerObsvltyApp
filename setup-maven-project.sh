@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Create parent directory
-mkdir -p ../TradeRiskMicrometerObsvltyApp
+cd ../
+mkdir -p TradeRiskMicrometerObsvltyApp
 cd TradeRiskMicrometerObsvltyApp || exit
 
 # Create parent POM
